@@ -1,0 +1,14 @@
+{
+  "name": "whip-to-peer",
+  "version": "1.0.0",
+  "description": "whip-to-peer demo server",
+  "main": "index.js",
+  "author": "Sergio Garcia Murillo @ medooze",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "transaction-manager": "^2.1.4",
+    "websocket": "^1.0.34"
+  }
+}
