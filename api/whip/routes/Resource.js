@@ -17,6 +17,14 @@ resources.param("resourceId", (request, response, next, resourceId) => {
 
 const resource  = resources.route("/:resourceId");
 
+//PATCH
+resource.patch(Utils.requireContentType({type:"application/trickle-ice-sdpfrag"}));
+resource.patch((request, response) => {
+	//Do nothing
+	response.sendStatus(204);
+});
+
+
 //DELETE
 resource.delete((request, response) => {
 	//Get resource rom request
